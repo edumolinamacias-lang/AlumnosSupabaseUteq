@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center_horizontal">
+
+        <!-- Logotipo UTEQ -->
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo_uteq"
+            android:contentDescription="Logotipo UTEQ" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alumnos UTEQ"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btnConsultar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Actualizar lista" />
+
+        <ProgressBar
+            android:id="@+id/progressMaterias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:visibility="gone" />
+
+        <!-- Campo Multilínea de solo lectura para mostrar los resultados -->
+        <EditText
+            android:id="@+id/txtAlumnos"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="18dp"
+            android:background="@android:drawable/editbox_background_normal"
+            android:focusable="false"
+            android:clickable="true"
+            android:cursorVisible="false"
+            android:gravity="top|start"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            android:text="Pulse actualizar para consultar."
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</ScrollView>
